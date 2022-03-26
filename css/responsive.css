@@ -1,0 +1,131 @@
+/* ====================== css media query ====================== */
+/* ============ extra small screen ============ */
+@media screen and (max-width: 575px) {
+  /* utilities */
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  /* ============ nav bar section ============ */
+  .navbar-item {
+    margin: 0 0.7rem;
+    padding: 0.4rem 0;
+  }
+
+  .buy-now-button {
+    display: none;
+  }
+
+  /* ============= inner section ============= */
+  #inner .row {
+    padding: 0;
+  }
+
+  .social-links {
+    margin-bottom: 3rem;
+  }
+
+  .inner-col-one {
+    order: 1;
+    margin-top: 5rem;
+  }
+}
+
+/* ============ small screen ============ */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* utilities */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  /* ============ nav bar section ============ */
+  .navbar-item {
+    margin: 0 0.7rem;
+    padding: 0.4rem 0;
+  }
+
+  .buy-now-button {
+    display: none;
+  }
+
+  /* ============= inner section ============= */
+  .social-links {
+    margin-bottom: 3rem;
+  }
+
+  .inner-col-one {
+    order: 1;
+    margin-top: 5rem;
+  }
+}
+
+/* ============ medium screen ============ */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* ============ nav bar section ============ */
+  .navbar-item {
+    margin: 0 0.7rem;
+    padding: 0.4rem 0;
+  }
+
+  .buy-now-button {
+    display: none;
+  }
+
+  /* =========== inner section =========== */
+  .inner-col-one {
+    order: 1;
+    margin-top: 5rem;
+  }
+}
+
+/* ============ learge screen ============ */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* ============= utilities ============= */
+  #inner .row {
+    padding: 0 5rem;
+  }
+  /* =========== header section =========== */
+  .navbar-item {
+    margin: 0 0.5rem;
+  }
+
+  /* =========== inner section =========== */
+  .inner-col-one {
+    order: 1;
+    margin-top: 5rem;
+  }
+}
+
+/* ============ extra learge screen ============ */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* =============== inner section =============== */
+  .inner-col-one {
+    flex-basis: 55%;
+  }
+
+  .col-person-image {
+    flex-basis: 45%;
+  }
+}
+
+/* ============ x-extra learge screen ============ */
+@media screen and (min-width: 1400px) {
+  /* =============== inner section =============== */
+  .inner-col-one {
+    flex-basis: 55%;
+  }
+
+  .col-person-image {
+    flex-basis: 45%;
+  }
+}
