@@ -34,6 +34,27 @@
     order: 1;
     margin-top: 5rem;
   }
+
+  /* =============== resume section =============== */
+  .institute-name-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .institute-name {
+    margin-bottom: 1rem;
+  }
+
+  /* ============== testimonial section ============== */
+  .quote-arrow-button {
+    display: none;
+  }
+
+  .about-client {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ============ small screen ============ */
@@ -48,6 +69,17 @@
     font-size: 2rem;
     font-weight: 500;
   }
+
+  #inner .row {
+    max-width: 95%;
+  }
+
+  .container-xl {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* ============ nav bar section ============ */
   .navbar-item {
     margin: 0 0.7rem;
@@ -67,10 +99,47 @@
     order: 1;
     margin-top: 5rem;
   }
+
+  /* =============== resume section =============== */
+  .institute-name-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .institute-name {
+    margin-bottom: 1rem;
+  }
+
+  /* ============== testimonial section ============== */
+  .portfolio-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .portfolio-image {
+    width: 135px;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .portfolio-detailes {
+    margin-top: 0;
+  }
+
+  .quote-arrow-button {
+    display: none;
+  }
 }
 
 /* ============ medium screen ============ */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* utilities */
+  .container-xl {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* ============ nav bar section ============ */
   .navbar-item {
     margin: 0 0.7rem;
@@ -86,14 +155,37 @@
     order: 1;
     margin-top: 5rem;
   }
+
+  /* ============== testimonial section ============== */
+  .portfolio-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .portfolio-image {
+    width: 175px;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .portfolio-detailes {
+    margin-top: 0;
+  }
+
+  .quote-arrow-button {
+    display: none;
+  }
 }
 
 /* ============ learge screen ============ */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* ============= utilities ============= */
-  #inner .row {
-    padding: 0 5rem;
+  /* utilities */
+  .container-xl {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   /* =========== header section =========== */
   .navbar-item {
     margin: 0 0.5rem;
@@ -104,10 +196,22 @@
     order: 1;
     margin-top: 5rem;
   }
+
+  /* ============== testimonial section ============== */
+  .about-client {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ============ extra learge screen ============ */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* =============== header section =============== */
+  nav.navbar {
+    padding: 1.5rem 4rem;
+  }
+
   /* =============== inner section =============== */
   .inner-col-one {
     flex-basis: 55%;
@@ -115,11 +219,23 @@
 
   .col-person-image {
     flex-basis: 45%;
+  }
+
+  /* ============== testimonial section ============== */
+  .about-client {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* ============ x-extra learge screen ============ */
 @media screen and (min-width: 1400px) {
+  /* =============== header section =============== */
+  nav.navbar {
+    padding: 1.5rem 4rem;
+  }
+
   /* =============== inner section =============== */
   .inner-col-one {
     flex-basis: 55%;
@@ -127,5 +243,12 @@
 
   .col-person-image {
     flex-basis: 45%;
+  }
+
+  /* ============== testimonial section ============== */
+  .about-client {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
