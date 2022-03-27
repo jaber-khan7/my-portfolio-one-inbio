@@ -55,6 +55,25 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* ========================= pricing section ========================= */
+  .category-content {
+    padding: 1.5rem;
+  }
+
+  .pricing-category {
+    width: 95%;
+    margin: auto;
+  }
+
+  .package-name-and-value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .package-name {
+    margin-bottom: 1rem;
+  }
 }
 
 /* ============ small screen ============ */
@@ -202,6 +221,11 @@
     max-width: 420px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /* ============== testimonial section ============== */
+  .category-content {
+    padding: 2.7rem;
   }
 }
 
