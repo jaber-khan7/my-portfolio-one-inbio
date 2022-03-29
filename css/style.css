@@ -84,10 +84,6 @@ ul li {
   list-style: none;
 }
 
-#inner .row {
-  /* padding: 0 2rem; */
-}
-
 img {
   transform: scale(1.01);
 }
