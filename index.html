@@ -968,7 +968,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-4 gy-5">
             <!-- column one -->
             <div class="col">
-              <div class="portfolio-box" onclick="showToggleContent()">
+              <div class="portfolio-box" id="blog-box-one">
                 <!-- image of my project -->
                 <div class="portfolio-image">
                   <img
@@ -1002,7 +1002,7 @@
 
             <!-- column two -->
             <div class="col">
-              <div class="portfolio-box">
+              <div class="portfolio-box" id="blog-box-two">
                 <!-- image of my project -->
                 <div class="portfolio-image">
                   <img
@@ -1030,12 +1030,13 @@
                       The services provide for design
                     </h4>
                 </div>
+                <a class="position-absolute" href="#toggle-content-blog"></a>
               </div>
             </div>
 
             <!-- column three -->
             <div class="col">
-              <div class="portfolio-box">
+              <div class="portfolio-box" id="blog-box-three">
                 <!-- image of my project -->
                 <div class="portfolio-image">
                   <img
@@ -1063,6 +1064,7 @@
                       Mobile app landing & app maintain
                     </h4>
                 </div>
+                <a class="position-absolute" href="#toggle-content-blog"></a>
               </div>
             </div>
           </div>
@@ -1221,7 +1223,7 @@
           </div>
 
           <!-- blog image -->
-          <div class="my-blog-image">
+          <div id="my-blog-image" class="my-blog-image">
             <img class="img-fluid" src="images/blogs/blog-01.jpg" alt="" />
           </div>
 
