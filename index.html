@@ -16,12 +16,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
     <!-- bootstrap link -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
@@ -30,6 +24,7 @@
 
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css" />
+
     <title>mohammad jaber khan</title>
   </head>
   <body>
@@ -187,7 +182,7 @@
     </header>
 
     <!-- ===================== main section start ===================== -->
-    <main>
+    <main id="main">
 
       <!-- ================== features section start ================== -->
       <section id="features">
@@ -973,7 +968,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-4 gy-5">
             <!-- column one -->
             <div class="col">
-              <div class="portfolio-box">
+              <div class="portfolio-box" onclick="showToggleContent()">
                 <!-- image of my project -->
                 <div class="portfolio-image">
                   <img
@@ -981,7 +976,6 @@
                     src="images/blogs/blog-01.jpg"
                     alt=""
                   />
-                  <a class="position-absolute" href="#"></a>
                 </div>
 
                 <!-- detailes of my project -->
@@ -998,10 +992,11 @@
                   </div>
 
                   <!-- project title -->
-                  <h4>
-                    <a href="#">T-shirt design is the part of design</a>
-                  </h4>
+                    <h4 class="hover-text">
+                      T-shirt design is the part of design
+                    </h4>
                 </div>
+                <a class="position-absolute" href="#toggle-content-blog"></a>
               </div>
             </div>
 
@@ -1015,7 +1010,6 @@
                     src="images/blogs/blog-02.jpg"
                     alt=""
                   />
-                  <a class="position-absolute" href="#"></a>
                 </div>
 
                 <!-- detailes of my project -->
@@ -1032,9 +1026,9 @@
                   </div>
 
                   <!-- project title -->
-                  <h4>
-                    <a href="#">The services provide for design</a>
-                  </h4>
+                    <h4 class="hover-text">
+                      The services provide for design
+                    </h4>
                 </div>
               </div>
             </div>
@@ -1049,7 +1043,6 @@
                     src="images/blogs/blog-03.jpg"
                     alt=""
                   />
-                  <a class="position-absolute" href="#"></a>
                 </div>
 
                 <!-- detailes of my project -->
@@ -1066,9 +1059,9 @@
                   </div>
 
                   <!-- project title -->
-                  <h4>
-                    <a href="#">Mobile app landing & app maintain</a>
-                  </h4>
+                    <h4 class="hover-text">
+                      Mobile app landing & app maintain
+                    </h4>
                 </div>
               </div>
             </div>
@@ -1190,6 +1183,14 @@
                     <textarea rows="6"></textarea>
                   </label>
                 </div>
+
+                <!-- order button -->
+                <div
+                class="order-button btn d-flex align-items-center justify-content-center"
+              >
+                <span class="me-2">Send message</span>
+                <i class="fa-solid fa-right-long"></i>
+              </div>
               </div>
             </div>
             </div>
@@ -1208,8 +1209,74 @@
 
     <!-- ======================== main section end ======================== -->
 
+    <!-- ======================== toggle content ======================== -->
+    <section id="toggle-content-blog">
+      <div class="container toggle-container">
+        <div id="my-blog-section">
+          <!-- back button -->
+          <div id="go-back" class="go-back">
+            <i class="fa-solid fa-arrow-left-long go-back-button"></i>
+            <span>go back</span>
+            <a class="position-absolute" href="#my-blog"></a>
+          </div>
+
+          <!-- blog image -->
+          <div class="my-blog-image">
+            <img class="img-fluid" src="images/blogs/blog-01.jpg" alt="" />
+          </div>
+
+          <!-- date -->
+          <div class="date">
+            <span>2 May, 2021</span>
+          </div>
+
+          <h2 class="blog-title">Digital Marketo to Their New Office.</h2>
+
+          <p>
+            Nobis eleifend option congue nihil imperdiet doming id quod mazim
+            placerat facer possim assum. Typi non habent claritatem insitam; est
+            usus legentis in iis qui facit eorum claritatem. Investigationes
+            demonstraverunt lectores legere me lius quod ii legunt saepius.
+            Claritas est etiam processus dynamicus, qui sequitur mutationem
+            consuetudium lectorum.
+          </p>
+
+          <h3>Nobis eleifend option conguenes.</h3>
+
+          <p>
+            Mauris tempor, orci id pellentesque convallis, massa mi congue eros,
+            sed posuere massa nunc quis dui. Integer ornare varius mi, in
+            vehicula orci scelerisque sed. Fusce a massa nisi. Curabitur sit
+            amet suscipit nisl. Sed eget nisl laoreet, suscipit enim nec,
+            viverra eros. Nunc imperdiet risus leo, in rutrum erat dignissim id.
+          </p>
+
+          <p>
+            Ut rhoncus vestibulum facilisis. Duis et lorem vitae ligula cursus
+            venenatis. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Nunc vitae nisi tortor.
+            Morbi leo nulla, posuere vel lectus a, egestas posuere lacus. Fusce
+            eleifend hendrerit bibendum. Morbi nec efficitur ex.
+          </p>
+
+          <h3>Mauris tempor, orci id pellentesque.</h3>
+
+          <p>
+            Nulla non ligula vel nisi blandit egestas vel eget leo. Praesent
+            fringilla dapibus dignissim. Pellentesque quis quam enim. Vestibulum
+            ultrices, leo id suscipit efficitur, odio lorem rhoncus dolor, a
+            facilisis neque mi ut ex. Quisque tempor urna a nisi pretium, a
+            pretium massa tristique. Nullam in aliquam diam. Maecenas at nibh
+            gravida, ornare eros non, commodo ligula. Sed efficitur sollicitudin
+            auctor. Quisque nec imperdiet purus, in ornare odio. Quisque odio
+            felis, vestibulum et.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- ====================== footer section start ====================== -->
-    <footer>
+    <footer id="footer">
       <div class="container-xl">
         <div class="footer-message">
           <h2>
@@ -1224,8 +1291,7 @@
       </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 
     <!-- script file links -->
     <script src="js/bootstrap.bundle.min.js"></script>

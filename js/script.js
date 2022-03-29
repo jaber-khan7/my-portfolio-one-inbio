@@ -157,3 +157,40 @@ const premiumButton = document
     </ul>
     `;
   });
+
+// toggle content
+const showToggleContent = () => {
+  const toggleSection = document.getElementById("toggle-content-blog");
+  toggleSection.style.display = "block";
+
+  // header section
+  const innerSection = (document.getElementById("inner").style.display =
+    "none");
+
+  // main section
+  const mainSection = (document.getElementById("main").style.display = "none");
+
+  // footer section
+  const footerSection = (document.getElementById("footer").style.display =
+    "none");
+};
+
+// hide toggle content when click the hide button
+const goBack = document
+  .getElementById("go-back")
+  .addEventListener("click", function () {
+    const toggleSection = document.getElementById("toggle-content-blog");
+    toggleSection.style.display = "none";
+
+    // header section
+    const innerSection = (document.getElementById("inner").style.display =
+      "block");
+
+    // main section
+    const mainSection = (document.getElementById("main").style.display =
+      "block");
+
+    // footer section
+    const footerSection = (document.getElementById("footer").style.display =
+      "block");
+  });

@@ -70,13 +70,20 @@ p {
   padding: 1rem 0;
 }
 
-a {
+a,
+.hover-text {
   color: var(--secondary-color);
   text-decoration: none;
   transition: 200ms;
 }
 
-a:hover {
+.hover-text {
+  display: inline;
+  cursor: pointer;
+}
+
+a:hover,
+.hover-text:hover {
   color: var(--hover-color);
 }
 
@@ -241,9 +248,23 @@ span.animation-typing::before {
 
 /* person image */
 .person-image {
+  position: relative;
   display: grid;
   place-items: center;
-  padding: 0 2rem;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  overflow: hidden;
+}
+
+.person-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: var(--gradient-box);
+  box-shadow: var(--shadow-box);
+  bottom: 0;
+  left: 0;
 }
 
 /* ================= main section start ================= */
@@ -321,6 +342,7 @@ span.animation-typing::before {
 
 /* =================== portfolio section =================== */
 .portfolio-box {
+  position: relative;
   padding: 1.7rem;
   border-radius: 1rem;
   background: var(--gradient-box);
@@ -342,7 +364,8 @@ span.animation-typing::before {
 }
 
 .portfolio-image img {
-  transition: all 500ms;
+  cursor: pointer;
+  transition: all 300ms;
 }
 
 .position-absolute {
@@ -358,10 +381,6 @@ span.animation-typing::before {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-}
-
-.portfolio-detailes h4 {
-  padding: 0.5rem 0 1rem;
 }
 
 .project-name-reaction h6 {
@@ -645,3 +664,61 @@ font-family: 'Rubik', sans-serif;
 font-family: 'Yeseva One', cursive;
 font-family: 'Satisfy', cursive;
 */
+
+/* ================= blog section ================= */
+#toggle-content-blog {
+  display: none;
+}
+
+.toggle-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#my-blog-section {
+  padding: 5%;
+  background: var(--gradient);
+  box-shadow: var(--shadow-box);
+  border-radius: 10px;
+}
+
+.go-back {
+  position: relative;
+  width: 100px;
+  margin-bottom: 1rem;
+  font-family: "Satisfy", cursive;
+  color: var(--secondary-color);
+  text-align: right;
+  overflow: hidden;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.go-back span {
+  font-size: 1.3rem;
+}
+
+.go-back:hover {
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.my-blog-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.my-blog-image img {
+  width: 100%;
+  margin: auto;
+}
+
+.date {
+  padding: 2rem 0;
+}
+
+.blog-title {
+  font-size: 1.7rem;
+}
