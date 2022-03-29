@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fav icon -->
+    <link
+      rel="shortcut icon"
+      href="images/icons/shape-7.png"
+      type="image/x-icon"
+    />
     <!-- font awesome link -->
     <script
       src="https://kit.fontawesome.com/3fd646aeed.js"
@@ -26,7 +32,7 @@
       <!-- ================= navigation section start ================= -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand-name" href="#">Navbar</a>
+          <a class="navbar-brand-name" href="#">InBio</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,31 +47,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="navbar-item">
-                <a aria-current="page" href="#">Home</a>
+                <a aria-current="page" href="#inner">Home</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Features</a>
+                <a href="#features">Features</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Contact</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Portfolio</a>
+                <a href="#resume">Resume</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Resume</a>
+                <a href="#clients-section">Clients</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Clients</a>
+                <a href="#price-section">Pricing</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Pricing</a>
+                <a href="#my-blog">Blog</a>
               </li>
               <li class="navbar-item">
-                <a href="#">Blog</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
               <li class="navbar-item buy-now-button">
                 <a class="button" href="#">Buy Now</a>
@@ -78,7 +81,7 @@
       <!-- =================== inner section start =================== -->
       <section id="inner">
         <div class="container-xl">
-          <div class="row row-cols-1 row-cols-xl-2 d-flex align-items-center">
+          <div class="row row-cols-1 row-cols-lg-2 d-flex align-items-center">
             <!-- =========== detaile in column of inner section =========== -->
             <div class="col inner-col-one">
               <div class="inner-detailes">
@@ -179,6 +182,7 @@
 
     <!-- ===================== main section start ===================== -->
     <main>
+
       <!-- ================== features section start ================== -->
       <section id="features">
         <div class="container-xl">
@@ -479,7 +483,7 @@
       <section id="resume">
         <div class="container-xl">
           <div class="header-title">
-            <h6>Visit my portfolio and keep your feedback</h6>
+            <h6>5+ yeard of experience</h6>
             <h1>My Resume</h1>
           </div>
 
@@ -715,9 +719,9 @@
           <div class="row-testimonial row row-cols-1 row-cols-lg-2 mx-auto g-5">
             <!-- About client -->
             <div class="col about-client">
-              <div class="portfolio-box">
+              <div class="portfolio-box testimonial-box">
                 <!-- image of my project -->
-                <div class="portfolio-image">
+                <div class="portfolio-image testimonial-image">
                   <img
                     class="img-fluid"
                     src="images/clients/final-home--1st.png"
@@ -727,7 +731,7 @@
                 </div>
 
                 <!-- detailes of my project -->
-                <div class="portfolio-detailes">
+                <div class="portfolio-detailes testimonial-detailes">
                   <!-- project name -->
                   <h6 style="color: #ff014f">Rainbow-Themes</h6>
 
@@ -741,7 +745,7 @@
             </div>
 
             <!-- clients feedback -->
-            <div class="col" style="flex-grow: 1">
+            <div class="col" style="flex-grow: 1; position: relative;">
               <!-- quote and arrow button -->
               <div class="quote-arrow-button">
                 <!-- quote sign -->
@@ -754,7 +758,7 @@
                 </div>
 
                 <!-- arrow button -->
-                <div class="arrow-button">
+                <div class="arrow-button" style="position: absolute; top: 0; right: 0;">
                   <ul class="social-links">
                     <!-- left arrow button -->
                     <li class="social-link arrow">
@@ -834,26 +838,17 @@
                   <div class="row-shadow row row-cols-1 row-cols-sm-3 g-0">
                     <!-- static price -->
                     <div class="col">
-                      <div class="category active">
-                        Static
-                        <a class="position-absolute" href="#"></a>
-                      </div>
+                      <div id="static" class="category">Static</div>
                     </div>
 
                     <!-- standard price -->
                     <div class="col">
-                      <div class="category">
-                        Standard
-                        <a class="position-absolute" href="#"></a>
-                      </div>
+                      <div id="standard" class="category">Standard</div>
                     </div>
 
                     <!-- premium price -->
                     <div class="col">
-                      <div class="category">
-                        Premium
-                        <a class="position-absolute" href="#"></a>
-                      </div>
+                      <div id="premium" class="category active">Premium</div>
                     </div>
                   </div>
                 </div>
@@ -863,19 +858,20 @@
                   <!-- =========== package name and price =========== -->
                   <div class="package-name-and-value">
                     <div class="package-name">
-                      <h3>Design Make this Page</h3>
-                      <h5>Elementor</h5>
+                      <h3 id="package-name">Customize Your Single Page</h3>
+                      <h5 id="package-sub-name">Elementor</h5>
                     </div>
                     <div class="package-value">
-                      <i class="fa-solid fa-dollar-sign"></i><span>50.00</span>
+                      <i class="fa-solid fa-dollar-sign"></i
+                      ><span id="package-valud">75.00</span>
                     </div>
                   </div>
 
                   <!-- text about price -->
                   <div class="category-text">
-                    <p>
-                      Making this the first true generator on the Internet. It
-                      uses a dictionary & plugin Development.
+                    <p id="package-text">
+                      I will install your desire theme and made like Theme demo
+                      and customize your single page( homepage)
                     </p>
                   </div>
 
@@ -895,7 +891,7 @@
                         </ul>
 
                         <!-- service items -->
-                        <ul class="service-items">
+                        <ul id="service-item-one" class="service-items">
                           <li class="service-item">1 Page with Elementor</li>
                           <li class="service-item">Design Customization</li>
                           <li class="service-item">Responsive Design</li>
@@ -918,7 +914,7 @@
                         </ul>
 
                         <!-- service items -->
-                        <ul class="service-items">
+                        <ul id="service-item-two" class="service-items">
                           <li class="service-item">Multipage Elementor</li>
                           <li class="service-item">Design Figma</li>
                           <li class="service-item">MAintaine Design</li>
@@ -942,11 +938,11 @@
                   <div class="message text-center mt-4">
                     <small>
                       <i class="fa-solid fa-clock-rotate-left"></i>
-                      <span>2 Days Delivery</span>
+                      <span id="message-one">4 Days Delivery</span>
                     </small>
                     <small>
                       <i class="fa-solid fa-wave-square"></i>
-                      <span>Unlimited Revission</span>
+                      <span id="message-two">Unlimited Revission</span>
                     </small>
                   </div>
                 </div>
@@ -955,7 +951,270 @@
           </div>
         </div>
       </section>
+
+      <!-- ==================== my blog section start ==================== -->
+      <section id="my-blog">
+        <div class="container-xl">
+          <!-- section header -->
+          <div class="header-title">
+            <h6>Visit my blog and keep your feedback</h6>
+            <h1>My Blog</h1>
+          </div>
+
+          <!-- content of my blog section -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-4 gy-5">
+            <!-- column one -->
+            <div class="col">
+              <div class="portfolio-box">
+                <!-- image of my project -->
+                <div class="portfolio-image">
+                  <img
+                    class="img-fluid"
+                    src="images/blogs/blog-01.jpg"
+                    alt=""
+                  />
+                  <a class="position-absolute" href="#"></a>
+                </div>
+
+                <!-- detailes of my project -->
+                <div class="portfolio-detailes">
+                  <!-- project name -->
+                  <div class="project-name-reaction">
+                    <h6>Canada</h6>
+                    <div class="love-react reading">
+                      <small>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        2 min read
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- project title -->
+                  <h4>
+                    <a href="#">T-shirt design is the part of design</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- column two -->
+            <div class="col">
+              <div class="portfolio-box">
+                <!-- image of my project -->
+                <div class="portfolio-image">
+                  <img
+                    class="img-fluid"
+                    src="images/blogs/blog-02.jpg"
+                    alt=""
+                  />
+                  <a class="position-absolute" href="#"></a>
+                </div>
+
+                <!-- detailes of my project -->
+                <div class="portfolio-detailes">
+                  <!-- project name -->
+                  <div class="project-name-reaction">
+                    <h6>Development</h6>
+                    <div class="love-react reading">
+                      <small>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        2 hour read
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- project title -->
+                  <h4>
+                    <a href="#">The services provide for design</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- column three -->
+            <div class="col">
+              <div class="portfolio-box">
+                <!-- image of my project -->
+                <div class="portfolio-image">
+                  <img
+                    class="img-fluid"
+                    src="images/blogs/blog-03.jpg"
+                    alt=""
+                  />
+                  <a class="position-absolute" href="#"></a>
+                </div>
+
+                <!-- detailes of my project -->
+                <div class="portfolio-detailes">
+                  <!-- project name -->
+                  <div class="project-name-reaction">
+                    <h6>Application</h6>
+                    <div class="love-react reading">
+                      <small>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        23 min read
+                      </small>
+                    </div>
+                  </div>
+
+                  <!-- project title -->
+                  <h4>
+                    <a href="#">Mobile app landing & app maintain</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= contact section ======================= -->
+      <section id="contact">
+        <div class="container-xl">
+          <!-- section header -->
+          <div class="header-title">
+            <h6>Contact</h6>
+            <h1>Contact with me</h1>
+          </div>
+
+          <!-- content of contact section -->
+          <div class="row row-cols-1 row-cols-lg-2 g-5">
+            <!-- contact with me -->
+            <div class="col col-lg-5">
+              <div class="portfolio-box">
+                <!-- image of my project -->
+                <div class="portfolio-image">
+                  <img
+                    style="width: 100%; height: auto;"
+                    class="img-fluid"
+                    src="images/banner-images/contact1.png"
+                    alt=""
+                  />
+                  <a class="position-absolute" href="#"></a>
+                </div>
+
+                <!-- detailes of my project -->
+                <div class="portfolio-detailes contact-detailes">
+                  <h3>Mohammad Jaber Khan</h3>
+                  <p>Chief Operation Officer</p>
+                  <p>
+                    I am available for freelance work. Connect with me via and call in to my account.
+                  </p>
+                  <p class="mb-0"> Phone:
+                    <a href="tel:01758338718">+880 1758338718</a>
+                  </p>
+                  <p> E-mail:
+                    <a href="mailto:sohaghossainsh100@gmail.com">
+                      example@gmail.com
+                    </a>
+                  </p>
+
+                  <!-- my social media information -->
+                  <div class="social-media-info mt-5">
+                    <h6>Find with me</h6>
+                    <ul class="social-links mb-0">
+                      <!-- facebook -->
+                      <li class="social-link">
+                        <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+
+                      <!-- instagram -->
+                      <li class="social-link">
+                        <a href="#">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+
+                      <!-- linked in -->
+                      <li class="social-link">
+                        <a href="#">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================ message section ================ -->
+            <div class="col col-lg-7">
+              <!-- ================= message box ================= -->
+              <div class="message-box">
+                <h3 style="margin-bottom: 1.5rem;">Get in touch</h3>
+
+                <!-- your name and phone number -->
+                <div class="name-phone">
+                  <div class="row row-cols-1 row-cols-md-2">
+                    <!-- your name -->
+                    <div class="col">
+                      <label> Your name
+                        <input type="text">
+                      </label>
+                    </div>
+                    <!-- your phone number -->
+                    <div class="col">
+                      <label> Phone number
+                        <input type="text">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- mail and subject -->
+                <div class="mail-message">
+                  <!-- your e-mail -->
+                  <label> E-mail
+                    <input type="e-mail">
+                  </label>
+
+                  <!-- topic of your message -->
+                  <label> Subject
+                    <input type="text">
+                  </label>
+                </div>
+
+                <!-- message box -->
+                <div class="textarea">
+                  <label> Your message
+                    <textarea rows="6"></textarea>
+                  </label>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ================== go to top ================== -->
+      <div class="go-to-top shadow">
+        <a href="#inner">
+          <i class="fa-solid fa-turn-up"></i>
+        </a>
+      </div>
     </main>
+
+    <!-- ======================== main section end ======================== -->
+
+    <!-- ====================== footer section start ====================== -->
+    <footer>
+      <div class="container-xl">
+        <div class="footer-message">
+          <h2>
+            <a href="#">InBio</a>
+          </h2>
+          <p>
+            <span class="copy-right">c</span>
+            <span>2022. All rights reserved by</span>
+            <a id="persented-by" href="#">Rainbow-Themes</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- script file links -->
     <script src="js/bootstrap.bundle.min.js"></script>

@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -43,6 +43,10 @@ h2 {
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.3rem;
 }
 
 h5 {
@@ -55,13 +59,13 @@ h6 {
   font-weight: 400;
   color: var(--primary-color);
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 1rem;
   font-weight: 300;
   color: var(--black-color);
-  letter-spacing: 1px;
   line-height: 1.8;
   padding: 1rem 0;
 }
@@ -81,7 +85,11 @@ ul li {
 }
 
 #inner .row {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
+}
+
+img {
+  transform: scale(1.01);
 }
 
 section {
@@ -107,8 +115,9 @@ nav.navbar {
 }
 
 .navbar-brand-name {
-  font-family: "Yeseva One", cursive;
+  font-family: "Satisfy", cursive;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .navbar-brand-name:hover {
@@ -120,7 +129,7 @@ nav.navbar {
 }
 
 .navbar-item {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0 0.7rem;
@@ -190,6 +199,7 @@ span.animation-typing::before {
 
 .social-media-info > h6,
 .market-places > h6 {
+  color: var(--secondary-color);
   font-weight: 400;
 }
 
@@ -238,6 +248,39 @@ span.animation-typing::before {
   display: grid;
   place-items: center;
   padding: 0 2rem;
+}
+
+/* ================= main section start ================= */
+/* =========== go to top button  ===========*/
+.go-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: var(--body-background);
+  /* box-shadow: var(--shadow-box); */
+  z-index: 1032;
+}
+
+.go-to-top a {
+  width: 100%;
+  height: 100%;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.go-to-top a:hover,
+.go-to-top a:hover i {
+  background: var(--hover-background);
+  color: var(--white-color);
+}
+
+.go-to-top i {
+  color: var(--primary-color);
 }
 
 /* ================ features section start ================ */
@@ -303,7 +346,7 @@ span.animation-typing::before {
 }
 
 .portfolio-image img {
-  transition: 300ms;
+  transition: all 500ms;
 }
 
 .position-absolute {
@@ -341,7 +384,8 @@ span.animation-typing::before {
   padding: 1.8rem 0;
   text-align: center;
   font-size: 1.1rem;
-  border-radius: 10px;
+  border-radius: 8px;
+  cursor: pointer;
   transition: color 300ms;
 }
 
@@ -462,6 +506,9 @@ span.animation-typing::before {
 /* ===================== awesome clients section ===================== */
 
 /* ========================= pricing section ========================= */
+#price-section {
+  margin-top: 4rem;
+}
 .category-content {
   padding: 3rem;
 }
@@ -474,6 +521,7 @@ span.animation-typing::before {
 }
 
 .package-value {
+  min-width: 131px;
   padding: 8px 25px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -521,6 +569,79 @@ span.animation-typing::before {
   font-weight: 300;
 }
 
+/* ======================= contact section start ======================= */
+.contact-detailes > p {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+/* ================= message box ================= */
+.message-box {
+  padding: 2rem;
+  background: var(--gradient-box);
+  box-shadow: var(--shadow-box);
+  border-radius: 8px;
+}
+
+label {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+label input,
+label textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  margin-top: 1rem;
+  border: 1px solid var(--border-black);
+  border-radius: 5px;
+}
+
+/* ========================= main section end ========================= */
+
+/* ========================= footer section start ========================= */
+.footer-message {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.footer-message > h2 {
+  font-family: "Satisfy", cursive;
+}
+
+.footer-message > p {
+  font-weight: 400;
+}
+
+.copy-right {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-right::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  left: 0;
+  transform: translate(-17%, 41%);
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+}
+
+#persented-by {
+  transition: all 400ms;
+}
+
+#persented-by:hover {
+  letter-spacing: 1px;
+}
 /* 
 font-family: 'Fira Code', monospace;
 font-family: 'Poppins', sans-serif;

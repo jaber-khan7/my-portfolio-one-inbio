@@ -56,6 +56,14 @@
     margin-right: auto;
   }
 
+  .education {
+    padding: 1.7rem;
+  }
+
+  .message small {
+    display: block;
+  }
+
   /* ========================= pricing section ========================= */
   .category-content {
     padding: 1.5rem;
@@ -73,6 +81,11 @@
 
   .package-name {
     margin-bottom: 1rem;
+  }
+
+  /* ========= go to top button ========= */
+  .go-to-top {
+    display: none;
   }
 }
 
@@ -130,23 +143,28 @@
   }
 
   /* ============== testimonial section ============== */
-  .portfolio-box {
+  .testimonial-box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  .portfolio-image {
+  .testimonial-image {
     width: 135px;
     margin-right: 1.5rem;
     margin-bottom: 0;
   }
 
-  .portfolio-detailes {
+  .testimonial-detailes {
     margin-top: 0;
   }
 
   .quote-arrow-button {
     display: none;
+  }
+
+  /* ====== go to top button ====== */
+  .go-to-top {
+    right: 2rem;
   }
 }
 
@@ -176,18 +194,18 @@
   }
 
   /* ============== testimonial section ============== */
-  .portfolio-box {
+  .testimonial-box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  .portfolio-image {
+  .testimonial-image {
     width: 175px;
     margin-right: 1.5rem;
     margin-bottom: 0;
   }
 
-  .portfolio-detailes {
+  .testimonial-detailes {
     margin-top: 0;
   }
 
@@ -200,7 +218,7 @@
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   /* utilities */
   .container-xl {
-    max-width: 950px;
+    max-width: 992px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -212,7 +230,7 @@
 
   /* =========== inner section =========== */
   .inner-col-one {
-    order: 1;
+    /* order: 1; */
     margin-top: 5rem;
   }
 
@@ -231,6 +249,10 @@
 
 /* ============ extra learge screen ============ */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* utilities */
+  h1 {
+    font-size: 3.5rem;
+  }
   /* =============== header section =============== */
   nav.navbar {
     padding: 1.5rem 4rem;
@@ -255,6 +277,10 @@
 
 /* ============ x-extra learge screen ============ */
 @media screen and (min-width: 1400px) {
+  /* utilities */
+  h1 {
+    font-size: 3.5rem;
+  }
   /* =============== header section =============== */
   nav.navbar {
     padding: 1.5rem 4rem;
