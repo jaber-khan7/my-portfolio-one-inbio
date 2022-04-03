@@ -36,6 +36,14 @@
   }
 
   /* =============== resume section =============== */
+  .row-shadow {
+    margin-bottom: 2rem;
+  }
+
+  .my-education-section {
+    margin: 2rem 0;
+  }
+
   .institute-name-rating {
     flex-direction: column;
     align-items: flex-start;
